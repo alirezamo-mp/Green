@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:paddingBottom="36dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+
+        android:textColor="@color/medium_gray_dark"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="Recipe Preferences"
+        android:textSize="24dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rel_1"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="All"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+          android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_2"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/rel_1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Vegan"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_3"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/rel_2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Vegetarian"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/rel_3"
+        android:layout_marginTop="32dp"
+        android:id="@+id/rel_4"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Paleo"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/rel_4"
+        android:layout_marginTop="32dp"
+        android:id="@+id/rel_5"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Keto"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_6"
+        android:layout_below="@id/rel_5"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Low Carb"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rel_7"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/rel_6"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="All"
+
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checked="true"
+
+            android:thumb="@drawable/swich_style"
+            app:track="@drawable/swich_background" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="18sp"
+        android:layout_marginTop="36dp"
+        android:layout_gravity="center"
+        android:layout_below="@id/rel_7"
+        android:maxWidth="300dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tailor your Recipes feed exactly
+how you like it" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

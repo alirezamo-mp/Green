@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+
+
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="#748A9D" />
+                    <size android:width="96dp" android:height="96dp" />
+
+
+                </shape>
+            </item>
+            <item android:bottom="28dp"
+
+                android:drawable="@drawable/ic_icon_plus" android:left="28dp" android:right="28dp" android:top="28dp"></item>
+        </layer-list>
+    </item>
+</selector>
+
+

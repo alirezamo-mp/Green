@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Select Speed"
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rel_style">
+
+
+            <ImageView
+                android:id="@+id/imgCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:src="@drawable/ic_icon_car_medium_gray" />
+
+            <TextView
+                android:id="@+id/txtTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Standard"
+                android:textColor="@color/medium_gray_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="2-3 days (free)"
+                android:textColor="@color/medium_gray"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/ch_carFm_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:button="@drawable/check_box_style"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="28dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rel_style">
+
+
+            <ImageView
+                android:id="@+id/imgCarR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:src="@drawable/ic_icon_fast_super_car" />
+
+            <TextView
+                android:id="@+id/txtTopR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCarR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Supersonic"
+                android:textColor="@color/medium_gray_dark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtBottomR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTopR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="Next day (£4.99)"
+                android:textColor="@color/medium_gray"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/ch_carFm_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtBottomR"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:button="@drawable/check_box_style"
+                android:checked="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Date"
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_car" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_carFm_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Time"
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="20sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcv_carFm_date" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_carFm_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/btn_car_add"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+
+        android:id="@+id/btn_car_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_style"
+        android:paddingVertical="15dp"
+
+        android:text="Continue"
+        android:textColor="@color/whites"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

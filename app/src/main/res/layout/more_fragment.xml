@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_more_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="34dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/edt_more_coupon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/edt_more_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rel_style"
+        android:drawablePadding="16dp"
+        android:hint="Coupon Code"
+        android:padding="18dp"
+        android:textColor="@color/medium_gray"
+        android:textColorHint="@color/medium_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+    <RelativeLayout
+        android:layout_marginBottom="16dp"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_more_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+
+            android:id="@+id/txt_more_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub-total"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/txt_more_subGH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="£9.30"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_more_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_more_sub"
+            android:layout_marginTop="8dp"
+
+            android:text="Delivery"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:id="@+id/txt_more_deliveryGH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_more_subGH"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="Standard (free)"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_more_delivery"
+            android:layout_marginTop="8dp"
+            android:text="Total"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txt_more_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_more_delivery"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:text="£9.30"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="22sp" />
+
+
+    </RelativeLayout>
+
+    <Button
+
+        android:id="@+id/btn_more_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_style"
+        android:paddingVertical="15dp"
+
+        android:text="Place Order"
+        android:textColor="@color/whites"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

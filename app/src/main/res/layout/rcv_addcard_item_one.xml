@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="16dp"
+
+    android:layout_width="300dp"
+    android:background="@drawable/rel_style"
+    android:id="@+id/rel_addCardItem_one"
+    android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/img_plus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:src="@drawable/addcard_item"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <TextView
+
+        android:textSize="15dp"
+        android:fontFamily="@font/font_b"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_plus"
+        android:text="ADD CARD"
+        android:textColor="@color/medium_gray_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

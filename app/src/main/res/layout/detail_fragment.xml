@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_detailFM"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/img_detailFm_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:src="@drawable/ic_repeat_grid_left" />
+
+        <TextView
+            android:id="@+id/txt_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="Broccoli"
+            android:textColor="@color/medium_gray_dark"
+            android:textSize="24sp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/img_detail_imageTitle"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        tools:src="@drawable/broccoli" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_detailFM_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16sp"
+        android:layout_marginRight="24dp"
+        app:cardBackgroundColor="@color/lighter_gray"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="16dp">
+
+            <TextView
+                android:id="@+id/txt_detailFM_showTL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Broccoli"
+                android:textColor="@color/medium_gray_dark"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_detailFm_showMS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2 heads"
+                android:textColor="@color/medium_gray"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_detailFm_showGh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="32dp"
+                android:layout_toLeftOf="@id/img_detailFM_show"
+                android:text="£0.80"
+                android:textColor="@color/medium_gray_dark"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_detailFM_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_icon_chevron"
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginRight="28dp"
+                android:layout_marginLeft="28dp"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"
+                android:id="@+id/rcv_detailFm_show"
+                android:layout_below="@id/txt_detailFM_showTL"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_detail_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/btn_style"
+        android:padding="18dp"
+        android:text="ADD TO CART"
+        android:textColor="@color/whites"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32sp"
+        android:text="Description"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        tools:text="Broccoli is a lovegous and nutritious, nothing more you need to know."
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24sp"
+        android:text="Storage"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        tools:text="For maximum freshness. Wash before use."
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24sp"
+        android:text="Origin"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_origin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        tools:text="Produce of United Kingdom, Republic of Ireland, Germany, Italy, Netherlands"
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24sp"
+        android:text="Preparation \u0026 Usage"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt_detail_usage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        tools:text="Wash before use. Trim as required."
+        android:textColor="@color/medium_gray_dark"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24sp"
+        android:text="Nutritional Information"
+        android:textColor="@color/green"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_detailFm_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>
