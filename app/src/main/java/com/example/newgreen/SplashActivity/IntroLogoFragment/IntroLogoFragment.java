@@ -77,6 +77,7 @@ public class IntroLogoFragment extends Fragment {
                 Toast.makeText(getContext(), "No internet connection", Toast.LENGTH_LONG).show();
             }
         });
+
         getContext().registerReceiver(checkConnectionReceiver, new IntentFilter("android.net.conn.CONNECTIVITY_CHANGE"));
     }
 

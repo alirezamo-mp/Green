@@ -2,7 +2,7 @@ package com.example.newgreen.Server;
 
 public class ApiProvider {
 
-     static ApiService apiService = null;
+    static ApiService apiService = null;
 
     public static ApiService apiProvider() {
         if (apiService == null) {

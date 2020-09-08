@@ -20,6 +20,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/tabLayout"
             android:layout_marginBottom="16dp" />
+
         <com.google.android.material.tabs.TabLayout
 
 
@@ -36,11 +37,11 @@
             app:tabBackground="@android:color/transparent"
             app:tabIndicator="@null"
             app:tabMode="fixed"
-
+            app:tabRippleColor="@null"
 
             app:tabPaddingEnd="10dp"
             app:tabPaddingStart="10dp"
-            app:tabRippleColor="@null" />
+             />
 
 
     </RelativeLayout>

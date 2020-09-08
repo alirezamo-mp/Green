@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void SetTablayout() {
         tabLayout = findViewById(R.id.tabLayout);
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);
         tabLayout.setupWithViewPager(viewPager);
         for (int i = 0; i < 5; i++) {
             TabLayout.Tab tab = tabLayout.getTabAt(i);
@@ -80,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
-        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
